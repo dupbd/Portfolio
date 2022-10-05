@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>Ben Dupont</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+   <div class="mainSheet">
+    <div class="top flexRow space-between">
+        <div class="w20">
+            <div class="shadow">
+                <div class="hex">
+                    <div class="hex-background">
+                        <img src="images/BD.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--DESKTOP NAV-->  
+        <div class="menu-nav flexRow stay w80 flex-end align-center deskShow">
+            <a href="#about"><p class="mr30"><span class="green">0.1</span> <span class="grey">About</span></p></a>
+            <a href="#"><p class="mr30"><span class="green">0.2</span> <span class="grey">Projects</span></p></a>
+            <a href="#"><p class="mr30"><span class="green">0.3</span> <span class="grey">Resume</span></p></a>
+            <a href="#"><p class="mr30"><span class="green">0.4</span> <span class="grey">Contact</span></p></a>
+        </div>
+        <!--END DESKTOP NAV-->
+        <!--MOBILE NAV-->
+        <div id="topNav" class="navigation mobileShow">
+            <span id="closebtn" onclick="navToggle()">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </span>
+          
+          <ul class="menulist">
+            <li><a class="menuitems" href="#">ABOUT</a></li>		
+            <li><a class="menuitems" href="#">CASE STUDIES</a></li>				
+            <li><a class="menuitems" href="#">CONTACT</a></li>
+            <li><a class="menuitems" href="#">RESUME</a></li>
+          </ul>			
+        </div>
+          
+          <div id="main">
+            </div>
+        <!--END MOBILE NAV-->
+    </div>
+    <div class="central-container flexRow">
+        <div class="w10">
+            <div class="flexRow col pl10 sticky row">
+                <img class="img-github mb20" src="images/GitHub-Mark-Light-64px.png">
+                <img class="img-github mb20" src="images/download.png">
+                <img class="img-github mb20" src="images/gram.png">
+                <img class="img-github mb20" src="images/twitter.png">
+                <img class="img-github mb20" src="images/codePen.png">
+            </div>
+        </div>
+        <div class="flexRow w80 mt60">
+            <div class="w70 auto">
+                <p class="green">Hi,&nbsp;&nbsp;my&nbsp;&nbsp;name&nbsp;&nbsp;is</p>
+                <h1 class="grey large mt0 mb0">Ben Dupont.</h1>
+                <h1 class="darkGrey large mt20">I make your site engaging.</h1>
+                <div class="mw500">
+                    <p class="darkGrey">I am a front-end web developer. I specialize in writing clean, responsive code. HTML5, CSS3, Vanilla JS, and ReactJS. Let me help you or your organzation with your front-end dev needs. </p>
+                </div>
+                <div class="projects-button">
+                    <p class="green">Scroll down for more &#8595;</p>
+                </div> 
+                <div class="about mt150 reveal">
+                    <h2 class="mr30 incon-font"><span class="green">0.1</span> <span class="grey">About</span></h2>
+                    <div class="flexRow space-around">
+                        <img src="images/me.png" class="img-me">
+                        <p class="darkGrey mw400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque possimus quia eius laudantium tempore non labore quae ea at necessitatibus tenetur, ipsam minima, atque quod perferendis, illum voluptatem alias temporibus consequatur delectus. Autem voluptatibus dolores aliquam velit quisquam error numquam maxime corrupti possimus pariatur, ratione voluptatum dicta natus assumenda aperiam?</p>
+                    </div>
+                </div>
+                <div class="projects mt100 reveal">
+                    <a id="projects"><h2 class="mr30 incon-font"><span class="green">0.2</span> <span class="grey">Stuff I've Built</span></h2></a>
+                    <p><span class="green">1. </span><span class="grey">Twitter Clone</span></p>
+                    <div class="flexRow">
+                        <div class="w70"><img src="images/twitter-pic.png" class="img-tweetfeed"></div>
+                        <div class="w30">
+                            <p class="grey">This is a project that I built that is a Twitter clone. This project focused almost entirely on the backend and making things functional. It's built using Java and the Spring Framework. <br><br>Users can signup, login, post tweets, create #hashtags, and follow/unfollow other users. <br><br>It's backend database is used by Spring's built in H2 database. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume mt100">
+                    <h2 class="mr30 incon-font"><span class="green">0.3</span> <span class="grey">Resume</span></h2>
+                    <div class="resume-button">
+                        <p class="green">Click to download resume</p>
+                    </div> 
+                </div>
+                <div class="contact mt100">
+                    <h2 class="mr30 incon-font"><span class="green">0.4</span> <span class="grey">Contact</span></h2>
+                    <p class="darkGrey">Get in touch with me to talk about jobs, projects, or just chat!</p>
+                    <p><span class="green">Email: </span><span class="grey">bendupont12@gmail.com</span></p>
+                    <p><span class="green">Phone: </span><span class="grey">(336) 287-7712</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="w10">
+
+        </div>
+    </div>
+
+   </div>
+   
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
