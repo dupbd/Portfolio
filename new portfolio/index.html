@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <title>Ben Dupont</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+   <div class="mainSheet">
+    <div class="top flexRow space-between">
+        <div class="w20">
+            <div class="shadow">
+                <div class="hex">
+                    <div class="hex-background">
+                        <img src="images/BD.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--DESKTOP NAV-->  
+        <div class="menu-nav flexRow stay w80 flex-end align-center deskShow">
+            <a href="#about"><p class="mr30"><span class="green">0.1</span> <span class="grey">About</span></p></a>
+            <a href="#projects"><p class="mr30"><span class="green">0.2</span> <span class="grey">Projects</span></p></a>
+            <a href="#resume"><p class="mr30"><span class="green">0.3</span> <span class="grey">Resume</span></p></a>
+            <a href="#contact"><p class="mr30"><span class="green">0.4</span> <span class="grey">Contact</span></p></a>
+        </div>
+        <!--END DESKTOP NAV-->
+        <!--MOBILE NAV-->
+        <div id="topNav" class="navigation mobileShow">
+            <span id="closebtn" onclick="navToggle()">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </span>
+          
+          <ul class="menulist">
+            <li><a class="menuitems" href="#about">About</a></li>		
+            <li><a class="menuitems" href="#projects">Projects</a></li>				
+            <li><a class="menuitems" href="#resume">Resume</a></li>
+            <li><a class="menuitems" href="#contact">Contact</a></li>
+          </ul>			
+        </div>
+          
+          <div id="main">
+            </div>
+        <!--END MOBILE NAV-->
+    </div>
+    <div class="central-container flexRow">
+        <div class="w10">
+            <div class="flexRow col pl10 sticky row">
+                <a href="https://github.com/dupbd" target="_blank"> <img class="img-github mb20" src="images/GitHub-Mark-Light-64px.png"></a>
+                <a href="https://www.linkedin.com/in/ben-dupont-675ab0119/" target="_blank"> <img class="img-github mb20" src="images/download.png"></a>
+                
+                
+            </div>
+        </div>
+        <div class="flexRow w80 mt60">
+            <div class="w70 auto">
+                <p class="green">Hi,&nbsp;&nbsp;my&nbsp;&nbsp;name&nbsp;&nbsp;is</p>
+                <h1 class="grey large mt0 mb0">Ben Dupont.</h1>
+                <h1 class="darkGrey large mt20">I make your site engaging.</h1>
+                <div class="mw500">
+                    <p class="darkGrey">I am a front-end web developer. I specialize in writing clean, responsive code. HTML5, CSS3, Vanilla JS, and ReactJS. Let me help you or your organzation with your front-end dev needs. </p>
+                </div>
+                <div class="projects-button">
+                    <p class="green">Scroll down for more &#8595;</p>
+                </div> 
+                <div id="about"></div>
+                <div class="about mt150 reveal">
+                    <h2 class="mr30 incon-font"><span class="green">0.1</span> <span class="grey">About</span></h2>
+                    <div class="flexRow space-around">
+                        <img src="images/me.png" class="img-me">
+                        <p class="darkGrey mw400">Located in Asheville, NC. I currently work as a Frontend Web Designer creating materials and advertisements for Pharma companies. I work hard to ensure that we are creating engaging and good looking projects while adhering to the strict rules you have when working with pharma. Great at building quickly, cleanly, and responsively, identifying and fixing UI/UX bugs, and getting the end product shipped.</p>
+                    </div>
+                </div>
+                <div id="projects"></div>
+                <div  class="projects mt100 reveal">
+                    <a id="projects"><h2 class="mr30 incon-font"><span class="green">0.2</span> <span class="grey">Things I Build</span></h2></a>
+                    <p><span class="grey">These are a few examples of the types of assets I currently build. Currently I work with pharmacutical companies so there is a fine line between looking great and being compliant. I take pride in what I am able to accomplish while pushing design as far as I can go.</span></p>
+                    <p class="grey">All builds are 100% responsive and can be viewed on any size screen. See examples of some desktop and mobile views below:</p>
+                    <div class="flexRow pb20">
+                        <div class="w50"><img src="images/hadlimadmu.png" class="img-asset mb20"></div>
+                        <div class="w50"><img src="images/hadlimaemail.png" class="img-assetMOB"></div>
+                    </div>
+                    <div class="flexRow">
+                        <div class="w50"><img src="images/arexvydwu.png" class="img-asset mb20"></div>
+                        <div class="w50"><img src="images/arexvyemail.png" class="img-assetMOB"></div>
+                    </div>
+                </div>
+                <div id="resume"></div>
+                <div class="resume mt100">
+                    <h2 class="mr30 incon-font"><span class="green">0.3</span> <span class="grey">Resume</span></h2>
+                    <div class="resume-button">
+                        <a href="https://dupbd.github.io/hosting/2022-Resume.pdf" target="_blank"> <p class="green">Click to download resume</p></a>
+                    </div> 
+                </div>
+                <div id="contact"></div>
+                <div class="contact mt100">
+                    <h2 class="mr30 incon-font"><span class="green">0.4</span> <span class="grey">Contact</span></h2>
+                    <p class="darkGrey">Get in touch with me to talk about jobs, projects, or just chat!</p>
+                    <p><span class="green">Email: </span><span class="grey">bendupont12@gmail.com</span></p>
+                    <p><span class="green">Phone: </span><span class="grey">(336) 287-7712</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="w10">
+
+        </div>
+    </div>
+
+   </div>
+   
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
