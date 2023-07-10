@@ -201,6 +201,9 @@ a {
     padding: 20px;
 }
 /* 6. Flex Elements */
+ @media only screen and (max-width: 768px) {
+    
+ }
 .flexRow {
     display: flex; 
 }
@@ -342,6 +345,9 @@ a {
 .w40 {
     width: 40%;
 }
+.w45 {
+    width: 45%;
+}
 .w50 {
     width: 50%;
 }
@@ -444,6 +450,10 @@ a {
         margin: auto;
     }
     .w50 {
+        width: 100%;
+        margin: auto;
+    }
+    .w45 {
         width: 100%;
         margin: auto;
     }
