@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/* CSS TABLE OF CONTENTS
+
+1. Main Elements
+2. Containers
+3. Colors
+4. Nav Elements
+5. Typography
+6. Flex Elements
+7. IMAGES
+8. Buttons
+9. Stylistic Things
+10. Utilities
+    10a. widths
+    10b. margins
+    10c. padding
+11. JS Functionality
+12. Responsiveness 
+
+*/
+
+
+/* 1. Main Elements */
+body {
+    background: #0B192E;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* 2. Containers */
+.mainSheet {
+    padding: 0 10px 0 10px;
+    font-family: sans-serif;
+    margin: 0;
+}
+.top {
+    background-color: #0B192E;
+    padding: 20px;
+}
+
+/* 3. Colors */
+.green {
+    color: #56CAB4;
+}
+.grey {
+    color: #CDD7F5;
+}
+.darkGrey {
+    color: #8892AE;
+}
+
+/* 4. Nav Elements */
+.menu-nav p {
+    display: inline-block;  
+}
+  
+.menu-nav p::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: #56CAB4;
+    transition: 300ms;
+}
+  
+.menu-nav p:hover::after {
+    width: 100%;
+}
+.navigation {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0B192E;
+    box-shadow: 2px 2px 5px #56CAB4;
+    -moz-box-shadow:2px 2px 5px #56CAB4;
+    -webkit-box-shadow: 2px 2px 5px #56CAB4;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-top: 0px;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation ul {
+    margin-top:30px;
+    text-align:center;
+    list-style:none; 
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.menulist {
+    width:200px;
+}
+
+.line1, .line2, .line3 {
+  margin-top:5px;
+  background-color:#fff;
+  width:25px;
+  height:3px;
+  display:block;
+  position:relative;
+  opacity:1.0;
+  border-radius:15%;
+  transition: all .3s;
+}
+
+.line1.active {
+  transform: rotate(270deg);
+  opacity:0.0;
+  background-color:yellow;
+  top:5px;
+}
+
+.line2.active {
+  transform: rotate(45deg);
+  background-color:yellow;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  background-color:yellow;
+  top:-7px;
+}
+
+.menuitems {
+    padding-top:12px;
+    padding-bottom:12px;
+    text-decoration: none;
+    list-style:none; 
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    font-size: 20px;
+    display: inline-block;
+    position:relative;	
+    text-align:center;
+    color: #56CAB4;
+   
+    transition: all .5s ease-in-out;
+}
+
+.menuitems:after {
+  content:'';
+  display:block;
+  width: 0;
+  height: 1px;
+  background: #fff;
+  transition: width .2s;
+}
+
+.menuitems:hover::after {
+    width:100%;
+}
+
+#closebtn {
+    height:25px;
+    width:25px;	
+    position: absolute;
+    text-decoration:none;
+    top: 10px;
+    left: 25px;
+    font-size: 36px !important;
+    margin-right: 50px;
+    z-index:100;
+    color:#fff;
+    cursor:pointer;
+    transition:background-position .3s;
+}
+
+#main {	
+    transition: margin-top .4s;
+    text-align:center;
+    margin:0;
+    padding: 16px 16px 0 16px;
+    font-size:30px;
+}
+/* 5. Typography */
+.incon-font {
+    font-family: 'Inconsolata', monospace;
+}
+.menu-nav p {
+    font-family: 'Inconsolata', monospace;
+}
+.large {
+    font-size: 4rem;
+}
+.about p {
+    line-height: 30px;
+}
+.textBox {
+    background-color: #12233F;
+    padding: 20px;
+}
+/* 6. Flex Elements */
+ @media only screen and (max-width: 768px) {
+    
+ }
+.flexRow {
+    display: flex; 
+}
+.space-between {
+    justify-content: space-between;
+}
+.space-around {
+    justify-content: space-around;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.col {
+    flex-direction: column;
+}
+
+/* 7. IMAGES */
+.img-github {
+    max-width: 30px;
+}
+.img-me {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #56CAB4;
+}
+.img-asset {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 30px;
+    
+    box-shadow: 2px 2px 5px #56CAB4;
+}
+.img-assetMOB {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 30px;
+    
+    box-shadow: 2px 2px 5px #56CAB4;
+}
+/* 8. Buttons */
+.home-button {
+    color: #56CAB4;
+    padding: 5px 10px;
+    border: 2px solid #56CAB4;
+    border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-height: 20px;
+}
+.projects-button {
+    color: #56CAB4;
+    padding: 5px 10px;
+    border: 2px solid #56CAB4;
+    border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    margin-top: 50px;
+}
+.home-button:hover {
+    box-shadow: 1px 1px 10px 2px #56CAB4;
+}
+.resume-button {
+    color: #56CAB4;
+    padding: 5px 10px;
+    border: 2px solid #56CAB4;
+    border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    margin-top: 50px;
+}
+.resume-button:hover {
+    box-shadow: 1px 1px 10px 2px #56CAB4;
+}
+/* 9. Stylistic Things */
+.sticky {
+    position: sticky;
+    top: 150px;
+}
+.sticky2 {
+    position: sticky;
+    top: 20px;
+}
+.shadow {
+    box-shadow: 1px 1px 10px 1px #56CAB4;
+    width: 55px;
+}
+
+.hex {
+    display: block;
+    margin: 0;
+    position: relative;
+    width: 55px;
+    height: 47.63px; /* width * 0.866 */
+    background: #FFFFFF;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+.hex-background {
+    position: absolute;
+    background-color: orange; /*color of the main-background*/
+    top: 2px; /* equal to border thickness */
+    left: 2px; /* equal to border thickness */
+    width: 55px; /* container height - (border thickness * 2) */
+    height: 47.63px; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+.hex img {
+    
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+
+/* 10. Utilities */
+/* 10a. widths */
+.w10 {
+    width: 10%;
+}
+.w20 {
+    width: 20%;
+}
+.w30 {
+    width: 30%;
+}
+.w40 {
+    width: 40%;
+}
+.w45 {
+    width: 45%;
+}
+.w50 {
+    width: 50%;
+}
+.w60 {
+    width: 60%;
+}
+.w70 {
+    width: 70%;
+}  
+.w80 {
+    width: 80%;
+}
+.w90 {
+    width: 90%;
+}
+.w100 {
+    width: 100%;
+}
+.mw500 {
+    max-width: 500px;
+}
+.mw400 {
+    max-width: 400px;
+}
+
+/* 10b. margins */
+.auto {
+    margin: auto;
+}
+.m0 {
+    margin: 0;
+}
+.mr30 {
+    margin-right: 30px;
+}
+.mt0 {
+    margin-top: 0;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt60 {
+    margin-top: 60px;
+}
+.mt100 {
+    margin-top: 100px;
+}
+.mt150 {
+    margin-top: 150px;
+}
+.mb0 {
+    margin-bottom: 0;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mb40 {
+    margin-bottom: 40px;
+}
+
+/* 10c. padding */
+.pl10 {
+    padding-left: 10px;
+}
+.pb20 {
+    padding-bottom: 20px;
+}
+
+/* JS Functionality */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /* Responsiveness */
+  @media only screen and (max-width: 768px) {
+    .flexRow {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .stay {
+        flex-direction: row;
+    }
+    .row {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .row img {
+        margin-right: 10px;
+    }
+    .main {
+        margin: 0;
+    }
+    .w70 {
+        width: 100%;
+        margin: auto;
+    }
+    .w50 {
+        width: 100%;
+        margin: auto;
+    }
+    .w45 {
+        width: 100%;
+        margin: auto;
+    }
+    .w30 {
+        width: 100%;
+        margin: auto;
+    }
+    .img-tweetfeed {
+        margin: auto;
+    }
+    .deskShow {
+        display: none;
+    }
+    .mobileShow {
+        display: block;
+    }
+    .shadow {
+        margin-top: 50px;
+    }
+    .mt100 {
+        margin-top: 30px;
+    }
+    .mt150 {
+        margin-top: 50px;
+    }
+  }
+ 
+  @media only screen and (min-width: 768px) {
+
+    .mobileShow {
+        display: none;
+    }
+    .deskShow {
+        display: inline-block;
+    }
+  }
+
+
+ 
