@@ -16,9 +16,10 @@ function reveal() {
         reveals[i].classList.remove("active");
       }
     }
+
   }
 
-
+  console.log ("I see you digging ;). Carry on");
 
 //MOBILE NAV
 var nav = document.getElementById("topNav");
